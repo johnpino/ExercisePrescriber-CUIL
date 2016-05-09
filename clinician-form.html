@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Clinician UI</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="blue-block col-md-12 col-sm-12 col-lg-12 col-xs-12" style="height: 7px;"> 
+</div>
+            </div>
+            <div class="row text-center white-block">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12"> 
+                    <img src="img/logo.jpg" class="img-responsive center-block">
+                    <p class="text-title">Crutch Use<br></p>
+                    <p class="text-subtitle">Instructional Leaflet</p>
+                    <hr />
+                    <p class="text-title-green">Clinician Form</p>
+                    <hr />
+                    <p>Please fill out the following form for your patients to receive customized instructions</p>
+                    <form action="leaflet.php" method="post">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <p class="text-question-number">1.</p>
+                            </div>
+                            <div class="col-md-9 col-sm-9">
+                                <p class="text-question">What is you patient’s name?</p>
+                                <input type="text" class="form-control" required="" name="name"> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <p class="text-question-number">2.</p>
+                            </div>
+                            <div class="col-md-9 col-sm-9">
+                                <p class="text-question">Patient's affected leg?</p>
+                                <select class="form-control" name="al"> 
+                                    <option>Left</option>                                     
+                                    <option>Right</option>                                     
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <p class="text-question-number">3.</p>
+                            </div>
+                            <div class="col-md-9 col-sm-9">
+                                <p class="text-question">Patient's weight bearing status?<br></p>
+                                <select class="form-control" name="wbs"> 
+                                    <option>Non-Weight Bearing</option>                                     
+                                    <option>Touch Weight Bearing</option>                                     
+                                    <option>Partial Weight Bearing</option>
+                                    <option>Weight Bearing As Tolerated</option>
+                                    <option>Full Weight Bearing</option>                                     
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <p class="text-question-number">4.</p>
+                            </div>
+                            <div class="col-md-9 col-sm-9">
+                                <p class="text-question">What side is their handrail on their stairs&nbsp;<i style="font-weight: normal; color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; line-height: normal;">(as you they look up the stairs)</i>?<br></p>
+                                <select class="form-control" name="hs"> 
+                                    <option>Left</option>                                     
+                                    <option>Right</option>                                     
+                                    <option>No Handrails</option>
+                                    <option>They don't have stairs</option>                                     
+                                </select>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="col-xs-12 text-center col-lg-6 col-md-6 col-sm-6">
+                            <button type="submit" class="btn">Send</button>                             
+                        </div>
+                        <div class="col-xs-12 text-center col-lg-6 col-md-6 col-sm-6">
+                            <button type="reset" class="btn-reset">Reset</button>                             
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
